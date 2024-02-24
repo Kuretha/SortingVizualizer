@@ -19,4 +19,15 @@ to run code you need to have SDL2 installed
 - ~~maybe i need to customize it, sigh...~~
 - the complex function example can be found in the code with TimSort name
 
-This program is written in CLion
+### Cmake Config
+- can be found in CmakeLists.txt
+- cmake_modules (SDL2)
+
+### Known issues in v1
+- defined array cannot reach 1000
+- max array tested 800
+- window cant be dragged
+- pressing the window will make the app crashing
+
+### External library version
+- SDL2 2.30.0

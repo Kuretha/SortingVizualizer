@@ -52,9 +52,23 @@ build cmake_object_order_depends_target_untitled: phony || CMakeFiles/untitled.d
 build CMakeFiles/untitled.dir/main.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/tf_no/CLionProjects/untitled/main.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles\untitled.dir\main.cpp.obj.d
   FLAGS = -fopenmp -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2
+  INCLUDES = -IC:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2 -IC:/Users/tf_no/CLionProjects/untitled/.
   OBJECT_DIR = CMakeFiles\untitled.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/utils/vizUtils.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/tf_no/CLionProjects/untitled/utils/vizUtils.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\utils\vizUtils.cpp.obj.d
+  FLAGS = -fopenmp -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2 -IC:/Users/tf_no/CLionProjects/untitled/.
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir\utils
+
+build CMakeFiles/untitled.dir/algos/timSort.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/tf_no/CLionProjects/untitled/algos/timSort.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\algos\timSort.cpp.obj.d
+  FLAGS = -fopenmp -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/include/SDL2 -IC:/Users/tf_no/CLionProjects/untitled/.
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir\algos
 
 
 # =============================================================================
@@ -64,7 +78,7 @@ build CMakeFiles/untitled.dir/main.cpp.obj: CXX_COMPILER__untitled_unscanned_Deb
 #############################################
 # Link the executable untitled.exe
 
-build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj | C$:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/lib/libSDL2main.a C$:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/lib/libSDL2.dll.a
+build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/utils/vizUtils.cpp.obj CMakeFiles/untitled.dir/algos/timSort.cpp.obj | C$:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/lib/libSDL2main.a C$:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/lib/libSDL2.dll.a
   FLAGS = -fopenmp -g
   LINK_LIBRARIES = -lmingw32  -mwindows  C:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/lib/libSDL2main.a  C:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-mingw32/lib/libSDL2.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled.dir

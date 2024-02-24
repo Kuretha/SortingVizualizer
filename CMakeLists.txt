@@ -11,6 +11,13 @@ set(SDL2_PATH "C:/Users/tf_no/SDL2-devel-2.30.0-mingw/SDL2-2.30.0/x86_64-w64-min
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIR})
 
-add_executable(untitled main.cpp)
+add_executable(untitled main.cpp
+        utils/vizUtils.cpp
+        utils/vizUtils.h
+        algos/timSort.cpp
+        algos/timSort.h
+)
 
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARY})
+
+target_include_directories(${PROJECT_NAME} PRIVATE .)
